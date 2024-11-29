@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: */search/*
+Disallow: */samples-search?s=*
+Disallow: */search?*
+Disallow: */uploads/*
+Disallow: *?/weblog/
+
+User-agent: GPTBot
+Disallow: /
+
+
+Sitemap: https://studyfy.com/sitemap.xml
