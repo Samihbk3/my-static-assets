@@ -23,7 +23,7 @@
     />
 
     <meta
-      content="https://cdn.prod.website-files.com/5f32671df6c27b4b45276696/60704f81af185516f5932d74_StudyFy.png"
+      content="https://my-static-assets.pages.dev/img/ogimage.png"
       property="og:image"
     />
     <meta
@@ -35,22 +35,19 @@
       property="twitter:description"
     />
     <meta
-      content="https://cdn.prod.website-files.com/5f32671df6c27b4b45276696/60704f81af185516f5932d74_StudyFy.png"
+      content="https://my-static-assets.pages.dev/img/ogimage.png"
       property="twitter:image"
     />
     <meta property="og:type" content="website" />
     <meta content="summary_large_image" name="twitter:card" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- google verification harvey account google console -->
     <meta
-      content="FfLu4OWMpzpyuc_2d8fMtZ5Vo5U9pfso1S5Kyr3X0NU"
+      content="yHpbwbCNThYZH9I1qDreZMrLZV4KYZQU9DIYkrvst4o"
       name="google-site-verification"
     />
     <!-- css sheet link -->
-    <link
-      href="css/studyfy.1f082ce7a.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="css/tmcfm.1f082ce7a.min.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript">
       !(function (o, c) {
         var n = c.documentElement,
@@ -62,11 +59,11 @@
       })(window, document);
     </script>
     <link
-      href="/img/favicon/fav.webp"
+      href="/my-static-assets/img/favicon.webp"
       rel="shortcut icon"
       type="image/x-icon"
     />
-    <link href="/img/favicon/fav.webp" rel="apple-touch-icon" />
+    <link href="/my-static-assets/img/favicon.webp" rel="apple-touch-icon" />
     <link href="https://takemyclassesforme.net/" rel="canonical" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -161,224 +158,220 @@
     </style>
 
     <script>
-      // Affiliates
-      "use strict";
-      var subName = getArgument("subName", document.currentScript.src) || "app",
-        affiliateConfig = {
-          objects: [
-            {
-              track_everything: !1,
-              keyword: "adpump",
-              config: { script: null },
-            },
-            {
-              track_everything: !0,
-              keyword: "tap_s",
-              config: {
-                script: "https://"
-                  .concat(subName, ".")
-                  .concat(getDomain(), "/utils/script_.min.js"),
-                default_domain: "essaypro.com",
-              },
-            },
-            {
-              track_everything: !1,
-              keyword: "clickid_",
-              config: { script: null },
-            },
-          ],
-        };
-      function setCookie_(e, t, n) {
-        var o = new Date();
-        (t = encodeURIComponent(t)),
-          o.setTime(o.getTime() + 24 * n * 60 * 60 * 1e3);
-        var r = "expires=" + o.toUTCString();
-        document.cookie =
-          e +
-          "=" +
-          t +
-          "; " +
-          r +
-          "; domain=." +
-          getDomain() +
-          "; path=/; SameSite=None; Secure";
-      }
-      function defineSourceUrl() {
-        var e = document.domain.split("."),
-          t = "";
-        return (
-          e[0].split("-")[1]
-            ? -1 !==
-              ["develop", "app-dev", "app-local", "mob-dev"].indexOf(e[0])
-              ? (t = "api-dev")
-              : -1 !==
-                  ["app-stage", "mob-stage", "app-local", "mob-dev"].indexOf(
-                    e[0]
-                  ) && (t = "api-staging")
-            : (t = "external-api"),
-          t
-        );
-      }
-      function getDomain() {
-        var e = window.location.hostname;
-        return e.substring(e.lastIndexOf(".", e.lastIndexOf(".") - 1) + 1);
-      }
-      function getAffiliateSourceName() {
-        return "".concat(defineSourceUrl(), ".").concat(getDomain());
-      }
-      function keywordMatch(e) {
-        var t = getArgument("proxy_domain")
-          ? !!getArgument(e, document.referrer)
-          : !!getArgument(e);
-        return (
-          t &&
-            setCookie_(
-              e,
-              getArgument("proxy_domain")
-                ? getArgument(e, document.referrer)
-                : getArgument(e),
-              15
-            ),
-          t
-        );
-      }
-      function getArgument(e, t) {
-        if (
-          (e = new RegExp("[?&]" + encodeURIComponent(e) + "=([^#&]*)").exec(
-            t || location.search || location.hash
-          ))
-        )
-          return decodeURIComponent(e[1]);
-      }
-      function loadScript(e) {
-        var t = document.createElement("script");
-        (t.type = "text/javascript"),
-          (t.src = e),
-          (t.id = "scriptAffiliate"),
-          document.getElementsByTagName("head")[0].appendChild(t),
-          setTimeout(function () {
-            t.remove();
-          }, 6e4);
-      }
-      !(function () {
-        var e = getArgument("promocode");
-        e && "undefined" !== e && setCookie_("promo_code", e, 15),
-          affiliateConfig.objects.forEach(function (e) {
-            if (e.track_everything || keywordMatch(e.keyword)) {
-              var t = e.config.script;
-              t && loadScript(t);
-            }
-          });
-      })();
+                  // Affiliates
+                  "use strict";
+                  var subName = getArgument("subName", document.currentScript.src) || "app",
+                    affiliateConfig = {
+                      objects: [
+                        {
+                          track_everything: !1,
+                          keyword: "adpump",
+                          config: { script: null },
+                        },
+                        {
+                          track_everything: !0,
+                          keyword: "tap_s",
+                          config: {
+                            script: "https://"
+                              .concat(subName, ".")
+                              .concat(getDomain(), "/utils/script_.min.js"),
+                            default_domain: "takemyclassesforme.net"},
+                          },
+                        },
+                        {
+                          track_everything: !1,
+                          keyword: "clickid_",
+                          config: { script: null },
+                        },
+                      ],
+                    };
+                  function setCookie_(e, t, n) {
+                    var o = new Date();
+                    (t = encodeURIComponent(t)),
+                      o.setTime(o.getTime() + 24 * n * 60 * 60 * 1e3);
+                    var r = "expires=" + o.toUTCString();
+                    document.cookie =
+                      e +
+                      "=" +
+                      t +
+                      "; " +
+                      r +
+                      "; domain=." +
+                      getDomain() +
+                      "; path=/; SameSite=None; Secure";
+                  }
+                  function defineSourceUrl() {
+                    var e = document.domain.split("."),
+                      t = "";
+                    return (
+                      e[0].split("-")[1]
+                        ? -1 !==
+                          ["develop", "app-dev", "app-local", "mob-dev"].indexOf(e[0])
+                          ? (t = "api-dev")
+                          : -1 !==
+                              ["app-stage", "mob-stage", "app-local", "mob-dev"].indexOf(
+                                e[0]
+                              ) && (t = "api-staging")
+                        : (t = "external-api"),
+                      t
+                    );
+                  }
+                  function getDomain() {
+                    var e = window.location.hostname;
+                    return e.substring(e.lastIndexOf(".", e.lastIndexOf(".") - 1) + 1);
+                  }
+                  function getAffiliateSourceName() {
+                    return "".concat(defineSourceUrl(), ".").concat(getDomain());
+                  }
+                  function keywordMatch(e) {
+                    var t = getArgument("proxy_domain")
+                      ? !!getArgument(e, document.referrer)
+                      : !!getArgument(e);
+                    return (
+                      t &&
+                        setCookie_(
+                          e,
+                          getArgument("proxy_domain")
+                            ? getArgument(e, document.referrer)
+                            : getArgument(e),
+                          15
+                        ),
+                      t
+                    );
+                  }
+                  function getArgument(e, t) {
+                    if (
+                      (e = new RegExp("[?&]" + encodeURIComponent(e) + "=([^#&]*)").exec(
+                        t || location.search || location.hash
+                      ))
+                    )
+                      return decodeURIComponent(e[1]);
+                  }
+                  function loadScript(e) {
+                    var t = document.createElement("script");
+                    (t.type = "text/javascript"),
+                      (t.src = e),
+                      (t.id = "scriptAffiliate"),
+                      document.getElementsByTagName("head")[0].appendChild(t),
+                      setTimeout(function () {
+                        t.remove();
+                      }, 6e4);
+                  }
+                  !(function () {
+                    var e = getArgument("promocode");
+                    e && "undefined" !== e && setCookie_("promo_code", e, 15),
+                      affiliateConfig.objects.forEach(function (e) {
+                        if (e.track_everything || keywordMatch(e.keyword)) {
+                          var t = e.config.script;
+                          t && loadScript(t);
+                        }
+                      });
+                  })();
+                  // Google Tag Manager
+                  (function (w, d, s, l, i) {
+                    w[l] = w[l] || [];
+                    w[l].push({
+                      "gtm.start": new Date().getTime(),
+                      event: "gtm.js",
+                    });
+                    var f = d.getElementsByTagName(s)[0],
+                      j = d.createElement(s),
+                      dl = l != "dataLayer" ? "&l=" + l : "";
+                    j.async = true;
+                    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                    f.parentNode.insertBefore(j, f);
+                  })(window, document, "script", "dataLayer", "GTM-5KL44QKN");
+      // End Google Tag Manager
+                  // Calculator
+                  function readyCalc() {
+                    var el = document.getElementById("skeleton-block");
+                    if (el) {
+                      el.remove();
+                    }
+                  }
 
-      // Google Tag Manager
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-          "gtm.start": new Date().getTime(),
-          event: "gtm.js",
-        });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://metrics.studyfy.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-WDVGCKB");
+                  // Datadog Real User Monitoring Script
+            (function (h, o, u, n, d) {
+              h = h[d] = h[d] || {
+                q: [],
+                onReady: function (c) {
+                  h.q.push(c);
+                },
+              };
+              d = o.createElement(u);
+              d.async = 1;
+              d.src = n;
+              n = o.getElementsByTagName(u)[0];
+              n.parentNode.insertBefore(d, n);
+            })(window, document, "script", "https://www.datadoghq-browser-agent.com/us3/v4/datadog-rum.js", "DD_RUM");
 
-      // Calculator
-      function readyCalc() {
-        var el = document.getElementById("skeleton-block");
-        if (el) {
-          el.remove();
-        }
-      }
+            // Configure Datadog RUM when it's ready
+            window.DD_RUM.onReady(function () {
+              // Detect bot traffic (Optional)
+              let botPattern =
+                "(googlebot|bot|bingbot|slurp|java|wget|curl|python|bot|etc...)";
+              let regexBot = new RegExp(botPattern, "i");
+              let conditionalSampleRate = regexBot.test(navigator.userAgent) ? 0 : 25;
 
-      // Datadog
-      (function (h, o, u, n, d) {
-        h = h[d] = h[d] || {
-          q: [],
-          onReady: function (c) {
-            h.q.push(c);
-          },
-        };
-        d = o.createElement(u);
-        d.async = 1;
-        d.src = n;
-        n = o.getElementsByTagName(u)[0];
-        n.parentNode.insertBefore(d, n);
-      })(
-        window,
-        document,
-        "script",
-        "https://www.datadoghq-browser-agent.com/us3/v4/datadog-rum.js",
-        "DD_RUM"
-      );
-      window.DD_RUM.onReady(function () {
-        let botPattern =
-          "(googlebot\/|bot|Googlebot-Mobile|Googlebot-Image|Google favicon|Mediapartners-Google|bingbot|slurp|java|wget|curl|Commons-HttpClient|Python-urllib|libwww|httpunit|nutch|phpcrawl|msnbot|jyxobot|FAST-WebCrawler|FAST Enterprise Crawler|biglotron|teoma|convera|seekbot|gigablast|exabot|ngbot|ia_archiver|GingerCrawler|webmon |httrack|webcrawler|grub.org|UsineNouvelleCrawler|antibot|netresearchserver|speedy|fluffy|bibnum.bnf|findlink|msrbot|panscient|yacybot|AISearchBot|IOI|ips-agent|tagoobot|MJ12bot|dotbot|woriobot|yanga|buzzbot|mlbot|yandexbot|purebot|Linguee Bot|Voyager|CyberPatrol|voilabot|baiduspider|citeseerxbot|spbot|twengabot|postrank|turnitinbot|scribdbot|page2rss|sitebot|linkdex|Adidxbot|blekkobot|ezooms|dotbot|Mail.RU_Bot|discobot|heritrix|findthatfile|europarchive.org|NerdByNature.Bot|sistrix crawler|ahrefsbot|Aboundex|domaincrawler|wbsearchbot|summify|ccbot|edisterbot|seznambot|ec2linkfinder|gslfbot|aihitbot|intelium_bot|facebookexternalhit|yeti|RetrevoPageAnalyzer|lb-spider|sogou|lssbot|careerbot|wotbox|wocbot|ichiro|DuckDuckBot|lssrocketcrawler|drupact|webcompanycrawler|acoonbot|openindexspider|gnam gnam spider|web-archive-net.com.bot|backlinkcrawler|coccoc|integromedb|content crawler spider|toplistbot|seokicks-robot|it2media-domain-crawler|ip-web-crawler.com|siteexplorer.info|elisabot|proximic|changedetection|blexbot|arabot|WeSEE:Search|niki-bot|CrystalSemanticsBot|rogerbot|360Spider|psbot|InterfaxScanBot|Lipperhey SEO Service|CC Metadata Scaper|g00g1e.net|GrapeshotCrawler|urlappendbot|brainobot|fr-crawler|binlar|SimpleCrawler|Livelapbot|Twitterbot|cXensebot|smtbot|bnf.fr_bot|A6-Indexer|ADmantX|Facebot|Twitterbot|OrangeBot|memorybot|AdvBot|MegaIndex|SemanticScholarBot|ltx71|nerdybot|xovibot|BUbiNG|Qwantify|archive.org_bot|Applebot|TweetmemeBot|crawler4j|findxbot|SemrushBot|yoozBot|lipperhey|y!j-asr|Domain Re-Animator Bot|AddThis|CloudWatchSynthetics)";
-        let regexBot = new RegExp(botPattern, "i");
-        let conditionalSampleRate = regexBot.test(navigator.userAgent) ? 0 : 25;
+              // Initialize Datadog RUM
+              window.DD_RUM.init({
+                clientToken: "YOUR_CLIENT_TOKEN", // Replace with your actual Datadog client token
+                applicationId: "YOUR_APPLICATION_ID", // Replace with your actual Datadog application ID
+                site: "us3.datadoghq.com", // Datadog site for US region (you can change this if needed)
+                service: "YOUR_SERVICE_NAME", // Name of your service (e.g., "my-website")
+                env: "prod", // Specify environment like 'prod', 'staging', etc.
+                sessionSampleRate: conditionalSampleRate, // Conditional sampling based on bot detection
+                sessionReplaySampleRate: 50, // Record 50% of sessions for replay
+                trackUserInteractions: true, // Track user interactions like clicks and scrolls
+                trackResources: true, // Track resource load times
+                trackLongTasks: true, // Track long-running tasks
+                trackSessionAcrossSubdomains: true, // Track user sessions across subdomains
+                defaultPrivacyLevel: "mask-user-input", // Privacy setting for user data
+              });
 
-        window.DD_RUM.init({
-          clientToken: "pub771418ee892c26a57ad67bbe2c6fa59a",
-          applicationId: "81d05faa-a697-4467-ba45-58b073d208d5",
-          site: "us3.datadoghq.com",
-          service: "webflow-sites",
-          env: "prod",
-          // Specify a version number to identify the deployed version of your application in Datadog
-          // version: '1.0.0',
-          sessionSampleRate: conditionalSampleRate,
-          sessionReplaySampleRate: 50,
-          trackUserInteractions: true,
-          trackResources: true,
-          trackLongTasks: true,
-          trackSessionAcrossSubdomains: true,
-          defaultPrivacyLevel: "mask-user-input",
-        });
-        window.DD_RUM.startSessionReplayRecording();
+              // Start recording session replay
+              window.DD_RUM.startSessionReplayRecording();
 
-        setTimeout(() => {
-          const parseCookie = (str) =>
-            str
-              .split(";")
-              .map((v) => v.split("="))
-              .reduce((acc, v) => {
-                acc[decodeURIComponent(v[0].trim())] = decodeURIComponent(
-                  v[1].trim()
-                );
-                return acc;
-              }, {});
-          let cookie = parseCookie(document.cookie);
+              // Send cookies or other custom data (optional)
+              setTimeout(() => {
+                const parseCookie = (str) =>
+                  str
+                    .split(";")
+                    .map((v) => v.split("="))
+                    .reduce((acc, v) => {
+                      acc[decodeURIComponent(v[0].trim())] = decodeURIComponent(v[1].trim());
+                      return acc;
+                    }, {});
+                let cookie = parseCookie(document.cookie);
 
-          window.DD_RUM.setGlobalContextProperty("cookies", {
-            tr_visit_id: cookie.tr_visit_id,
-            _ga: cookie._ga,
-            price_id: cookie.p_id,
-          });
-        }, 2000);
-      });
-    </script>
-    <!-- Microdata -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Studyfy",
-        "url": "https://studyfy.com/",
-        "logo": "https://assets.website-files.com/5f32671df6c27b4b45276696/5f7f0fd858afc15d16c9302c_Group%207252.svg",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+1 (307) 316-6371",
-          "contactType": "customer service",
-          "areaServed": ["US"],
-          "availableLanguage": "en"
-        },
-        "sameAs": [
-          "https://www.facebook.com/studyfyofficial/",
-          "https://www.instagram.com/studyfyofficial/"
-        ]
-      }
+                window.DD_RUM.setGlobalContextProperty("cookies", {
+                  tr_visit_id: cookie.tr_visit_id,
+                  _ga: cookie._ga,
+                  price_id: cookie.p_id,
+                });
+              }, 2000);
+            });
+
+                <!-- Microdata - Organization Schema Understand JSON-LD Schema Types -->
+                <script type="application/ld+json">
+                  {
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "name": "Studyfy",
+                    "url": "https://studyfy.com/",
+                    "logo": "https://assets.website-files.com/5f32671df6c27b4b45276696/5f7f0fd858afc15d16c9302c_Group%207252.svg",
+                    "contactPoint": {
+                      "@type": "ContactPoint",
+                      "telephone": "+1 (307) 316-6371",
+                      "contactType": "customer service",
+                      "areaServed": ["US"],
+                      "availableLanguage": "en"
+                    },
+                    "sameAs": [
+                      "https://www.facebook.com/studyfyofficial/",
+                      "https://www.instagram.com/studyfyofficial/"
+                    ]
+                  }
     </script>
     <script type="application/ld+json">
       {
@@ -411,12 +404,13 @@
       <!-- Google Tag Manager (noscript) -->
       <noscript
         ><iframe
-          src="https://metrics.studyfy.com/ns.html?id=GTM-WDVGCKB"
+          src="https://www.googletagmanager.com/ns.html?id=GTM-5KL44QKN"
           height="0"
           width="0"
           style="display: none; visibility: hidden"
         ></iframe
       ></noscript>
+      <!-- End Google Tag Manager (noscript) -->
     </div>
     <div
       data-w-id="ecf56594-ccf8-ffac-e85f-6ad9b8f14772"
