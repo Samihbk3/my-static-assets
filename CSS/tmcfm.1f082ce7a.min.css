@@ -9128,7 +9128,7 @@ blockquote {
   position: static;
 }
 .header__light-title {
-  color: var(--slate-blue);
+  color: var(--2hov);
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
